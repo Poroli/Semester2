@@ -8,7 +8,7 @@ public class PlattformerMovement : MonoBehaviour
     public float JumpForce = 7f;
 
     private Rigidbody2D rigidbody;
-    private GroundCheck groundCheck;
+    private Groundcheck groundCheck;
     private Animator playerAnimator;
     private SpriteRenderer playerRenderer;
 
@@ -16,7 +16,7 @@ public class PlattformerMovement : MonoBehaviour
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        groundCheck = GetComponent<GroundCheck>();
+        groundCheck = GetComponent<Groundcheck>();
         playerAnimator = GetComponentInChildren<Animator>();
         playerRenderer = GetComponentInChildren<SpriteRenderer>();
     }
@@ -33,7 +33,7 @@ public class PlattformerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && groundCheck.CanJump())
         {
             newVelocity.y = JumpForce;
-            groundCheck.JustJumped();
+            groundCheck.Jumped();
             justJumped = true;
         }
 
@@ -43,11 +43,11 @@ public class PlattformerMovement : MonoBehaviour
 
     private void SetAnimations(Vector2 velocity, bool justJumped)
     {
-        playerAnimator.SetBool("IsGrounded", groundCheck.IsGrounded);
+        playerAnimator.SetBool("IsGrounded", groundCheck.Grounded);
 
         if (velocity.magnitude > 0.05)
         {
-           playerAnimator.SetBool("IsMoving", true);
+           playerAnimator.SetBool("Moves", true);
             if (velocity.x > 0)
             {
                 playerRenderer.flipX = false;
@@ -59,7 +59,7 @@ public class PlattformerMovement : MonoBehaviour
         }
         else
         {
-            playerAnimator.SetBool("IsMoving", false);
+            playerAnimator.SetBool("Moves", false);
         }
 
         if (justJumped == true)
