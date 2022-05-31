@@ -117,7 +117,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"
+-r:"Assets/World Assets/Enemys/Normal/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"
 -r:"C:/Unity/Unity Editor/2021.3.2f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Unity/Unity Editor/2021.3.2f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Unity/Unity Editor/2021.3.2f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -422,9 +422,9 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/AstarPathfindingProject/PackageTools/Editor/EditorBase.cs"
-"Assets/AstarPathfindingProject/PackageTools/Editor/EditorGUIx.cs"
-"Assets/AstarPathfindingProject/PackageTools/Editor/EnumFlagDrawer.cs"
+"Assets/World Assets/Enemys/Normal/AstarPathfindingProject/PackageTools/Editor/EditorBase.cs"
+"Assets/World Assets/Enemys/Normal/AstarPathfindingProject/PackageTools/Editor/EditorGUIx.cs"
+"Assets/World Assets/Enemys/Normal/AstarPathfindingProject/PackageTools/Editor/EnumFlagDrawer.cs"
 -langversion:9.0
 
 /deterministic
