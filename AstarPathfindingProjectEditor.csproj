@@ -56,30 +56,30 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AstarPathfindingProject\Editor\SeekerEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AILerpEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
-    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AILerpEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
+    <Compile Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\SeekerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
-    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
-    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
-    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+    <None Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
+    <None Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+    <None Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
+    <None Include="Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -346,14 +346,14 @@
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>

@@ -310,11 +310,11 @@
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -726,10 +726,6 @@
       <Project>{F3260C03-4328-E564-7028-A16037AC4AA2}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{DA893E5E-E2CD-29E7-6414-87BCC695C6B6}</Project>
-      <Name>PackageToolsEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
       <Project>{9ED3D2C4-43D3-F484-FB95-1B718E269559}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
@@ -790,9 +786,9 @@
       <Project>{399C17D3-4297-5630-0C55-9F47F652E13C}</Project>
       <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{316002F8-EC88-1626-62C8-A24553C45E41}</Project>
-      <Name>AstarPathfindingProjectEditor</Name>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{DA893E5E-E2CD-29E7-6414-87BCC695C6B6}</Project>
+      <Name>PackageToolsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
       <Project>{158C037C-78E3-4AE0-A129-D7CB18F116BF}</Project>
@@ -805,6 +801,10 @@
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
       <Project>{1B1D04B0-E77C-D8DC-E913-AF3651B18274}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{316002F8-EC88-1626-62C8-A24553C45E41}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
       <Project>{0BCB51DB-D81C-13E8-A98D-553233A43D12}</Project>
@@ -894,10 +894,6 @@
       <Project>{94E3E985-C9B8-B8E8-2D2E-AE466F352590}</Project>
       <Name>Unity.RenderPipelines.Universal.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{43F7BBA5-6573-5D17-24A4-A4121A104D71}</Project>
-      <Name>AstarPathfindingProject</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{E8FE9F29-505D-4779-9D47-310F9A9BE702}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
@@ -929,6 +925,10 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
       <Project>{7CB0D9FC-233A-F5F7-1DD6-0878B40118F3}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{43F7BBA5-6573-5D17-24A4-A4121A104D71}</Project>
+      <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
       <Project>{243A1015-A445-956E-B3B4-DA8F8664D4D4}</Project>

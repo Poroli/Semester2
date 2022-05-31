@@ -268,11 +268,11 @@
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\World Assets\Enemys\Normal\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -733,10 +733,6 @@
       <Project>{E0011FD0-D7B5-5D12-1AF7-6DB7D1D104E4}</Project>
       <Name>Unity.Burst.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProject.Player.csproj">
-      <Project>{0258B8DD-553C-3611-7566-A041A595A648}</Project>
-      <Name>AstarPathfindingProject.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
       <Project>{E73D3809-528A-6C7F-EE6B-14D24FB167BD}</Project>
       <Name>Unity.Services.Core.Environments.Player</Name>
@@ -752,6 +748,10 @@
     <ProjectReference Include="Unity.2D.Common.Runtime.Player.csproj">
       <Project>{10C1B5D9-312F-20D4-E289-32033C37D2ED}</Project>
       <Name>Unity.2D.Common.Runtime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.Player.csproj">
+      <Project>{0258B8DD-553C-3611-7566-A041A595A648}</Project>
+      <Name>AstarPathfindingProject.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.Player.csproj">
       <Project>{4A677853-B328-DF80-2EC8-20D29A359A1B}</Project>
