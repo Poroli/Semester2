@@ -391,6 +391,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scipts/CamFollow.cs"
 "Assets/Scipts/EnemyAI.cs"
+"Assets/Scipts/EnemydownAI.cs"
 "Assets/Scipts/Enemy_GFX.cs"
 "Assets/Scipts/Groundcheck.cs"
 "Assets/Scipts/PlattformerMovement.cs"

@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scipts\Groundcheck.cs" />
     <Compile Include="Assets\Scipts\PlattformerMovement.cs" />
     <Compile Include="Assets\Scipts\Restarter.cs" />
+    <Compile Include="Assets\Scipts\EnemydownAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
