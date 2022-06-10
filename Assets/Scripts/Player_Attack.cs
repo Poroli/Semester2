@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Player_Attack : MonoBehaviour
 {
-    public Damage_Handler DMGcalc;
+    public Damage_Handler DMG_Handler;
     private Animator playerAnimator;
 
     public bool Attack = false;
 
     void Start()
     {
-        DMGcalc = FindObjectOfType<Damage_Handler>();
+        DMG_Handler = FindObjectOfType<Damage_Handler>();
         playerAnimator = FindObjectOfType<Animator>();
     }
 

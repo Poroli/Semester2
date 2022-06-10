@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Damage_Handler DMGcalc;
+    public Damage_Handler DMG_Handler;
     public ValueScript VScript;
     public bool InReichweite = false;
     public float weapon_DMG;
 
     private void Start()
     {
-        DMGcalc = FindObjectOfType<Damage_Handler>();
-
+        DMG_Handler = FindObjectOfType<Damage_Handler>();
+        weapon_DMG = VScript.Weapon_baseDMG;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
             InReichweite = true;
-            DMGcalc.P_DMG = weapon_DMG;
+            DMG_Handler.P_DMG = weapon_DMG;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

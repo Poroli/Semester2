@@ -64,18 +64,10 @@
     <Compile Include="Assets\ValueScript.cs" />
     <Compile Include="Assets\Scripts\Groundcheck.cs" />
     <Compile Include="Assets\Scripts\Damage_Handler.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\PlattformerMovement.cs" />
     <Compile Include="Assets\Scripts\Restarter.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-    <Compile Include="Assets\Scipts\CamFollow.cs" />
-    <Compile Include="Assets\Scipts\Restarter.cs" />
-    <Compile Include="Assets\Scipts\Groundcheck.cs" />
-    <Compile Include="Assets\Scipts\EnemyAI.cs" />
-    <Compile Include="Assets\Scipts\PlattformerMovement.cs" />
-    <Compile Include="Assets\Scipts\Enemy_GFX.cs" />
-    <Compile Include="Assets\Scipts\EnemydownAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

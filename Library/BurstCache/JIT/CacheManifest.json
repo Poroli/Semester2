@@ -7,7 +7,7 @@
     },
     {
       "FullName": "Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-06-10T12:12:30.6324959Z"
+      "LastWriteTime": "2022-06-10T17:01:03.0447118Z"
     },
     {
       "FullName": "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -19,15 +19,19 @@
     },
     {
       "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-06-10T12:12:30.2673698Z"
+      "LastWriteTime": "2022-06-10T17:01:02.5350539Z"
     },
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-06-10T12:12:30.2683709Z"
+      "LastWriteTime": "2022-06-10T17:01:02.8736751Z"
     },
     {
       "FullName": "Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-06-10T12:12:30.4844175Z"
+      "LastWriteTime": "2022-06-10T17:01:02.4290284Z"
+    },
+    {
+      "FullName": "mscorlib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2022-04-27T05:37:08Z"
     },
     {
       "FullName": "UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -35,15 +39,11 @@
     },
     {
       "FullName": "Unity.2D.Common.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-06-10T12:12:30.5824763Z"
-    },
-    {
-      "FullName": "mscorlib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-04-27T05:37:08Z"
+      "LastWriteTime": "2022-06-10T17:01:02.3840199Z"
     },
     {
       "FullName": "Unity.2D.Animation.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-06-10T12:12:30.7195162Z"
+      "LastWriteTime": "2022-06-10T17:01:03.1307333Z"
     },
     {
       "FullName": "UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -121,8 +121,8 @@
       "AssemblyDependencyIndices": [
         0,
         1,
-        4,
         2,
+        4,
         3
       ]
     },
@@ -135,8 +135,9 @@
         0,
         6,
         7,
-        8,
         2,
+        8,
+        9,
         3,
         4
       ]
@@ -162,8 +163,8 @@
       "AssemblyDependencyIndices": [
         0,
         1,
-        2,
         4,
+        2,
         3
       ]
     },
@@ -175,7 +176,6 @@
       "AssemblyDependencyIndices": [
         0,
         1,
-        9,
         2,
         3,
         4
@@ -219,7 +219,7 @@
         4,
         3,
         5,
-        8,
+        9,
         11
       ]
     },
@@ -235,7 +235,7 @@
         4,
         5,
         3,
-        8,
+        9,
         11
       ]
     },
