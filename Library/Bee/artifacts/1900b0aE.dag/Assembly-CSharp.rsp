@@ -396,6 +396,19 @@
 "Assets/Scipts/Groundcheck.cs"
 "Assets/Scipts/PlattformerMovement.cs"
 "Assets/Scipts/Restarter.cs"
+"Assets/Scripts/CamFollow.cs"
+"Assets/Scripts/Damage_Handler.cs"
+"Assets/Scripts/EnemyAI.cs"
+"Assets/Scripts/EnemydownAI.cs"
+"Assets/Scripts/EnemyHealth.cs"
+"Assets/Scripts/Enemy_GFX.cs"
+"Assets/Scripts/Groundcheck.cs"
+"Assets/Scripts/PlattformerMovement.cs"
+"Assets/Scripts/Player_Attack.cs"
+"Assets/Scripts/Restarter.cs"
+"Assets/Scripts/Test.cs"
+"Assets/Scripts/Weapon.cs"
+"Assets/ValueScript.cs"
 -langversion:9.0
 
 /deterministic
