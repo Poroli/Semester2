@@ -9,13 +9,16 @@ public class PlattformerMovement : MonoBehaviour
     public float Slidestartspeed;
     public float Slidetime;
     public float ActualSpeed;
+    public bool sliding = false;
+    public int slideDirectionVar;
 
     private Rigidbody2D rb2d;
     private Groundcheck groundCheck;
     private Animator playerAnimator;
     private SpriteRenderer playerRenderer;
+    private Stats_Handler S_Handler;
     private int canmove = 1;
-    private bool sliding = false;
+    private int Slidetimeup = 1;
 
 
     private void Start()
@@ -24,6 +27,7 @@ public class PlattformerMovement : MonoBehaviour
         groundCheck = GetComponent<Groundcheck>();
         playerAnimator = GetComponentInChildren<Animator>();
         playerRenderer = GetComponentInChildren<SpriteRenderer>();
+        S_Handler = FindObjectOfType<Stats_Handler>();
 
         Slidestartspeed = 0;
         Slidetime = 1f;
@@ -57,26 +61,30 @@ public class PlattformerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             canmove = 0;
-            
-            ActualSpeed = Slidestartspeed / (Slidetime * Slidetime);
-            if (Mathf.Abs(ActualSpeed) <= 1f )
+
+            ActualSpeed = (slideDirectionVar * S_Handler.SlideSpeed) / Mathf.Pow(Slidetime, 2);
+            if (Mathf.Abs(ActualSpeed) <= 1f || S_Handler.PercentageofMaxSlided >= 100)
             {
                 ActualSpeed = 0;
+                Slidetimeup = 0;
             }
             Slide.y = rb2d.velocity.y;
             Slide.x = ActualSpeed;
-            Slidetime += Time.deltaTime;
+            Slidetime += Time.deltaTime * Slidetimeup;
             
             rb2d.velocity = Slide;
             sliding = true;
-
 
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             canmove = 1;
             Slidetime = 1f;
+            S_Handler.Slidedistance = 0;
+            Slidetimeup = 1;
             sliding = false;
+            S_Handler.Chicken = true;
+            S_Handler.Slidetimereset = 0;
         }
     }
 
@@ -90,10 +98,13 @@ public class PlattformerMovement : MonoBehaviour
             if (velocity.x > 0)
             {
                 playerRenderer.flipX = false;
+                slideDirectionVar = 1;
+
             }
             else if (velocity.x < 0)
             {
                 playerRenderer.flipX = true;
+                slideDirectionVar = -1;
             }
         }
         else

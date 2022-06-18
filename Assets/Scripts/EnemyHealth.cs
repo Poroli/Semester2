@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public  ValueScript VScript;
-    public Damage_Handler DMGcalc;
+    public Stats_Handler S_Handler;
     public Player_Attack Pattack;
 
 
@@ -16,7 +16,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
-        DMGcalc = FindObjectOfType<Damage_Handler>();
+        S_Handler = FindObjectOfType<Stats_Handler>();
         Pattack = FindObjectOfType<Player_Attack>();
         currentHealth = VScript.EnemyHealth;
     }
@@ -35,20 +35,16 @@ public class EnemyHealth : MonoBehaviour
     }
     private void Update()
     {
+        if (Pattack.Attack == true && schlagbar == true)
+        {
+            newcurrentHealth = currentHealth - S_Handler.Player_DMG;
+            Pattack.Attack = false;
+            currentHealth = newcurrentHealth;
+        }
         if (currentHealth <= 0)
         {
             //EnemyDeathAnimation einfügen
             gameObject.SetActive(false);
-        }
-        if (schlagbar == true)
-        {
-            DMGcalc.E_currentHealth = currentHealth;
-        }
-        if (Pattack.Attack == true && schlagbar == true)
-        {
-            newcurrentHealth = currentHealth - DMGcalc.P_DMG;
-            Pattack.Attack = false;
-            currentHealth = newcurrentHealth;
         }
     }
 }
