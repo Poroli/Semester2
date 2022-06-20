@@ -83,7 +83,7 @@ public class PlattformerMovement : MonoBehaviour
             S_Handler.Slidedistance = 0;
             Slidetimeup = 1;
             sliding = false;
-            S_Handler.Chicken = true;
+            S_Handler.CanGetSpeed = true;
             S_Handler.Slidetimereset = 0;
         }
     }

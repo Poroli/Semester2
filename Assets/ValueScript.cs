@@ -7,5 +7,5 @@ public class ValueScript : ScriptableObject
 {
     public float EnemyHealth;
     public float Weapon_baseDMG;
-    public int GoldValue;
+    public float Slide_Xtraspeed;
 }
