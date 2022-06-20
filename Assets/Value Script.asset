@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyHealth: 5
   Weapon_baseDMG: 1
-  GoldValue: 0
+  Slide_Xtraspeed: 10
