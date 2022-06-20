@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlattformerMovement : MonoBehaviour
 {
+    public ValueScript V_Script;
     public float MoveSpeed = 5f;
     public float JumpForce = 7f;
     public float Slidestartspeed;
