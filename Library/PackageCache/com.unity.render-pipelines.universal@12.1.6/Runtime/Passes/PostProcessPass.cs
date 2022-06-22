@@ -646,6 +646,8 @@ namespace UnityEngine.Rendering.Universal.Internal
 
                 if (tempTarget2Used)
                     cmd.ReleaseTemporaryRT(ShaderConstants._TempTarget2);
+
+                cmd.ReleaseTemporaryRT(m_InternalLut.id);
             }
         }
 

@@ -1,6 +1,6 @@
 # Shaders and Materials
 
-URP provides the following Shaders for the most common use case scenarios:
+The Universal Render Pipeline uses a different shading approach than the Unity built-in Render Pipeline. As a result, built-in Lit and custom Lit Shaders do not work with the URP. Instead, URP has a new set of standard Shaders. URP provides the following Shaders for the most common use case scenarios:
 
 - [Complex Lit](shader-complex-lit.md)
 - [Lit](lit-shader.md)
@@ -17,25 +17,19 @@ URP provides the following Shaders for the most common use case scenarios:
 - Autodesk Interactive Transparent
 - Autodesk Interactive Masked
 
-## Shader compatibility
+**Upgrade advice:** If you upgrade your current Project to URP, you can [upgrade](upgrading-your-shaders.md) built-in Shaders to the new ones. Unlit Shaders from the built-in render pipeline still work with URP.
 
-Lit and custom Lit shaders written for the Built-in Render Pipeline are not compatible with URP.
+For [SpeedTree](https://docs.unity3d.com/Manual/SpeedTree.html) Shaders, Unity does not re-generate Materials when you re-import them, unless you click the Generate Materials or Apply & Generate Materials button.
 
-Unlit shaders written for the Built-in Render Pipeline are compatible with URP.
+**Note:** Unlit Shaders from the Unity built-in render pipeline work in URP.
 
-For information on converting shaders written for the Built-in Render Pipeline to URP shaders, see the page [Converting your shaders](upgrading-your-shaders.md).
+## Choosing a Shader
 
-## Choosing a shader
+With the Universal Render Pipeline, you can have real-time lighting with either Physically Based Shaders (PBS) and non-Physically Based Rendering (PBR).
 
-The Universal Render Pipeline implements Physically Based Rendering (PBR).
+For PBS, use the [Lit Shader](lit-shader.md). You can use it on all platforms. The Shader quality scales depending on the platform, but keeps physically based rendering on all platforms. This gives you realistic graphics across hardware. The Unity [Standard Shader](https://docs.unity3d.com/Manual/shader-StandardShader.html) and the [Standard (Specular setup) Shaders](https://docs.unity3d.com/Manual/StandardShaderMetallicVsSpecular.html) both map to the Lit Shader in URP. For a list of Shader mappings, see section [Shader mappings](upgrading-your-shaders.md#built-in-to-urp-shader-mappings).
 
-The pipeline provides pre-built shaders that can simulate real world materials.
-
-PBR materials provide a set of parameters that let artists achieve consistency between different material types and under different lighting conditions.
-
-The URP [Lit shader](lit-shader.md) is suitable for modeling most of the real world materials. The [Complex Lit shader](shader-complex-lit.md) is suitable for simulating advanced materials that require more complex lighting evaluation, such as the clear coat effect.
-
-URP provides the [Simple Lit shader](simple-lit-shader.md) as a helper to convert non-PBR projects made with the Built-in Render Pipeline to URP. This shader is non-PBR and is not supported by Shader Graph.
+If you are targeting less powerful devices, or your project has simpler shading, use the [Simple Lit shader](simple-lit-shader.md), which is non-PBR.
 
 If you don’t need real-time lighting, or would rather only use [baked lighting](https://docs.unity3d.com/Manual/LightMode-Baked.html) and sample global illumination, choose a Baked Lit Shader.
 
