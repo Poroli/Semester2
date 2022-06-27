@@ -6,6 +6,7 @@ public class Groundcheck : MonoBehaviour
 {
     public GameObject Origin;
     public LayerMask GroundLayer;
+    public ValueScript VScript;
     public float Distance;
     public int JumpAmmount;
     public bool Grounded;
@@ -13,9 +14,13 @@ public class Groundcheck : MonoBehaviour
     
     private int jumpCount;
     private bool isOnCooldown;
+    private int slideCount;
+    private int slideAmmount;
 
-
-
+    private void Start()
+    {
+        slideAmmount = VScript.AirslideAmmount;
+    }
     private void Update()
     {
         if (isOnCooldown == true)
@@ -38,6 +43,18 @@ public class Groundcheck : MonoBehaviour
             Grounded=true;
             jumpCount = 0;
         }
+        
+        if (hit.collider == null)
+        {
+            if (slideCount <= 0)
+            {
+                slideCount += 1;
+            }
+        }
+        else 
+        { 
+            slideCount = 0;
+        }
     }
     public bool CanJump()
     {
@@ -51,12 +68,27 @@ public class Groundcheck : MonoBehaviour
         }
     }
 
+    public bool canAirslide()
+    {
+        if (slideCount < slideAmmount)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     public void Jumped()
     {
         jumpCount += 1;
         isOnCooldown = true;
         Grounded = false;
         Invoke("EndCooldown", Cooldown);
+    }
+    public void Airslided()
+    {
+        slideCount += 1;
     }
 
     private void EndCooldown()

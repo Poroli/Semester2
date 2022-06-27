@@ -15,3 +15,5 @@ MonoBehaviour:
   EnemyHealth: 5
   Weapon_baseDMG: 1
   Slide_Xtraspeed: 10
+  MaxSlideStack: 200
+  AirslideAmmount: 2

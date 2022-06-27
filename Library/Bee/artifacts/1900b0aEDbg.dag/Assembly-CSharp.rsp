@@ -400,7 +400,6 @@
 "Assets/Scripts/Player_Attack.cs"
 "Assets/Scripts/Restarter.cs"
 "Assets/Scripts/Stats_Handler.cs"
-"Assets/Scripts/UnlockUpgradeWeapon.cs"
 "Assets/Scripts/Weapon.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

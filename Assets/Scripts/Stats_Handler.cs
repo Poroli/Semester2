@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Stats_Handler : MonoBehaviour
 {
-
+    
+    
     public Player_Attack Pattack;
     public EnemyHealth E_Health;
     public PlattformerMovement P_Movement;
@@ -18,6 +19,7 @@ public class Stats_Handler : MonoBehaviour
     public float Slidetimereset = 0;
     public int PercentageofMaxSlided;
     public bool CanGetSpeed = true;
+    public float Percentagestack;
 
     private float Slide_Xtrastartspeed;
 
@@ -34,7 +36,11 @@ public class Stats_Handler : MonoBehaviour
     {
         Slidedistance += P_Movement.ActualSpeed * (P_Movement.Slidetime - 1);
         roundedSlidedistance = Mathf.RoundToInt(Slidedistance);
-        
+
+        if (Percentagestack >= V_Script.MaxSlideStack)
+        {
+            Percentagestack = V_Script.MaxSlideStack;
+        }
     }
 
     //Berechnung Der Stats für Slide

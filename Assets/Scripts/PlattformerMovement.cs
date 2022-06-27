@@ -59,7 +59,7 @@ public class PlattformerMovement : MonoBehaviour
         Slidestartspeed = Input.GetAxisRaw("Horizontal") * MoveSpeed;
         Vector2 Slide = new Vector2 ();
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && groundCheck.canAirslide())
         {
             canmove = 0;
 
@@ -76,9 +76,12 @@ public class PlattformerMovement : MonoBehaviour
             rb2d.velocity = Slide;
             sliding = true;
 
+
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
+            groundCheck.Airslided();
+            S_Handler.Percentagestack += S_Handler.PercentageofMaxSlided; 
             canmove = 1;
             Slidetime = 1f;
             S_Handler.Slidedistance = 0;
