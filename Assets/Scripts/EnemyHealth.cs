@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public  ValueScript VScript;
+    public  ValueScript V_Script;
     public Stats_Handler S_Handler;
     public Player_Attack Pattack;
 
@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     {
         S_Handler = FindObjectOfType<Stats_Handler>();
         Pattack = FindObjectOfType<Player_Attack>();
-        currentHealth = VScript.EnemyHealth;
+        currentHealth = V_Script.EnemyHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -46,6 +46,7 @@ public class EnemyHealth : MonoBehaviour
         {
             //EnemyDeathAnimation einfügen
             gameObject.SetActive(false);
+            V_Script.Souls += V_Script.Soulsperkill;
         }
     }
 }

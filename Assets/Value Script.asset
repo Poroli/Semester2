@@ -17,4 +17,6 @@ MonoBehaviour:
   Slide_Xtraspeed: 10
   MaxSlideStack: 200
   AirslideAmmount: 2
-  AttackCooldown: 5
+  AttackCooldown: 0
+  Souls: 0
+  Soulsperkill: 10
