@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Player_Attack : MonoBehaviour
 {
-    public Stats_Handler DMG_Handler;
+    public Stats_Handler S_Handler;
+    public ValueScript V_Script;
+    public bool Attack = false;
+
     private Animator playerAnimator;
     private EnemyHealth E_Health;
+    private bool attackoncooldown;
 
-    public bool Attack = false;
+    private void Attackcooldown()
+    {
+        attackoncooldown = false;
+    }
 
     void Start()
     {
-        DMG_Handler = FindObjectOfType<Stats_Handler>();
+        S_Handler = FindObjectOfType<Stats_Handler>();
         playerAnimator = FindObjectOfType<Animator>();
         E_Health = FindObjectOfType<EnemyHealth>();
     }
@@ -20,10 +27,12 @@ public class Player_Attack : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.E) == true && E_Health.schlagbar == true)
+        if (Input.GetKeyDown(KeyCode.E) == true && E_Health.schlagbar == true && attackoncooldown == false)
         {
             Attack = true;
             playerAnimator.SetTrigger("Attack");
+            attackoncooldown = true;
+            Invoke("Attackcooldown", V_Script.AttackCooldown);
         }
     }
 

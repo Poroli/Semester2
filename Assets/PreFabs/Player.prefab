@@ -886,7 +886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10cb02c26e1cd5345b2e32112424e3b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DMG_Handler: {fileID: 0}
+  S_Handler: {fileID: 0}
+  V_Script: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
   Attack: 0
 --- !u!1 &5459042018881952696
 GameObject:

@@ -10,4 +10,8 @@ public class ValueScript : ScriptableObject
     public float Slide_Xtraspeed;
     public float MaxSlideStack;
     public int AirslideAmmount;
+    public float AttackCooldown;
+    public int Souls;
+    public int Soulsperkill;
+    public float PlayerMaxhealth;
 }
