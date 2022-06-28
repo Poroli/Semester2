@@ -12,10 +12,8 @@ namespace UnityEngine.Experimental.Rendering
 {
     // Add Profile and baking settings.
 
-    /// <summary>
-    /// A class containing info about the bounds defined by the probe volumes in various scenes.
-    /// </summary>
     [System.Serializable]
+    /// <summary> A class containing info about the bounds defined by the probe volumes in various scenes. </summary>
     public class ProbeVolumeSceneData : ISerializationCallbackReceiver
     {
         static PropertyInfo s_SceneGUID = typeof(Scene).GetProperty("guid", System.Reflection.BindingFlags.NonPublic | BindingFlags.Instance);
@@ -100,7 +98,7 @@ namespace UnityEngine.Experimental.Rendering
         }
 
         /// <summary>Set a reference to the object holding this ProbeVolumeSceneData.</summary>
-        /// <param name="parent">The object holding this ProbeVolumeSceneData, it will be dirtied every time scene bounds or settings are changed. </param>
+        /// <param name="parentAsset">The object holding this ProbeVolumeSceneData, it will be dirtied every time scene bounds or settings are changed. </param>
         /// <param name="parentSceneDataPropertyName">The name of the property holding the ProbeVolumeSceneData in the parentAsset.</param>
         public void SetParentObject(Object parent, string parentSceneDataPropertyName)
         {
