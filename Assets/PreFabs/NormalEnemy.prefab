@@ -98,9 +98,9 @@ GameObject:
   - component: {fileID: 3669494618607531710}
   - component: {fileID: 3669494618607531683}
   - component: {fileID: 3669494618607531708}
+  - component: {fileID: 3669494618607531681}
   - component: {fileID: 3669494618607531709}
   - component: {fileID: 3669494618607531682}
-  - component: {fileID: 3669494618607531681}
   m_Layer: 0
   m_Name: NormalEnemy
   m_TagString: Enemy
@@ -139,9 +139,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 5459042018766510986, guid: e39d085f84f958d43bca936ca071c0fa, type: 3}
   enemyGFX: {fileID: 3669494618824634562}
+  P_Health: {fileID: 0}
+  V_Script: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
+  catAnimation: {fileID: 0}
   speed: 200
   nextWaypointDistance: 3
   playerrechable: 0
+  catAttack: 0
 --- !u!114 &3669494618607531708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +174,24 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &3669494618607531681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3669494618607531711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41d82f1e4f900d499337a3ce13198b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  V_Script: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
+  S_Handler: {fileID: 0}
+  Pattack: {fileID: 0}
+  currentHealth: 0
+  newcurrentHealth: 0
+  schlagbar: 0
 --- !u!50 &3669494618607531709
 Rigidbody2D:
   serializedVersion: 4
@@ -207,24 +229,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.5}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &3669494618607531681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3669494618607531711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c41d82f1e4f900d499337a3ce13198b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  V_Script: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
-  S_Handler: {fileID: 0}
-  Pattack: {fileID: 0}
-  currentHealth: 0
-  newcurrentHealth: 0
-  schlagbar: 0
 --- !u!1 &3669494618653283184
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +240,7 @@ GameObject:
   - component: {fileID: 3669494618653283191}
   - component: {fileID: 3669494618653283189}
   - component: {fileID: 3669494618653283188}
+  - component: {fileID: 802759934800707417}
   m_Layer: 0
   m_Name: Enemy_Sprite
   m_TagString: Untagged
@@ -330,6 +335,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &802759934800707417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3669494618653283184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc3417c78f6d024491c8e38dfb3376e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  E_AI: {fileID: 0}
 --- !u!1 &3669494618824634563
 GameObject:
   m_ObjectHideFlags: 0

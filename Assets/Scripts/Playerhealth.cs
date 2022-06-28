@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Playerhealth : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class Playerhealth : MonoBehaviour
 
     void Update()
     {
-        
+        if (currenthealth <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
+        }
     }
 }

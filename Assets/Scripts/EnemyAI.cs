@@ -7,11 +7,14 @@ public class EnemyAI : MonoBehaviour
 {
     public Transform target;
     public Transform enemyGFX;
+    public Playerhealth P_Health;
+    public ValueScript V_Script;
+    public Animator catAnimation;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
-
     public bool playerrechable = false;
-    
+
+    public bool catAttack = false;
     
 
 
@@ -23,11 +26,11 @@ public class EnemyAI : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
 
-    // Start is called before the first frame update
     void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        P_Health = FindObjectOfType<Playerhealth>();
 
         InvokeRepeating("UpdatePath", 0f, .5f);
     }
@@ -64,13 +67,18 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void AttackPlayer()
+    {
+        P_Health.currenthealth -= V_Script.NormalEnemyDMG;
+    }
+
+
     void FixedUpdate()
     {
-        if (playerrechable)
+        if (playerrechable == true)
         {
             Debug.Log("Attack Player");
-            
-            return;
+            catAnimation.SetTrigger("Attack");          
         }
         else
         {

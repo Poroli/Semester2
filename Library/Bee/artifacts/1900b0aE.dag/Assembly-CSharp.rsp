@@ -391,6 +391,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CamFollow.cs"
 "Assets/Scripts/EnemyAI.cs"
+"Assets/Scripts/EnemyattacksPlayer_helper.cs"
 "Assets/Scripts/EnemydownAI.cs"
 "Assets/Scripts/EnemyHealth.cs"
 "Assets/Scripts/Enemy_GFX.cs"
