@@ -40,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
             newcurrentHealth = currentHealth - S_Handler.Player_DMG;
             Pattack.Attack = false;
             currentHealth = newcurrentHealth;
+            S_Handler.Percentagestack = 0;
         }
         if (currentHealth <= 0)
         {
