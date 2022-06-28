@@ -13,4 +13,5 @@ public class ValueScript : ScriptableObject
     public float AttackCooldown;
     public int Souls;
     public int Soulsperkill;
+    public float PlayerMaxhealth;
 }
