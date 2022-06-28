@@ -48,6 +48,7 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
+  VScript: {fileID: 0}
   Distance: 0
   JumpAmmount: 0
   Grounded: 0
@@ -722,6 +723,7 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
+  VScript: {fileID: 0}
   Distance: 0
   JumpAmmount: 0
   Grounded: 0
@@ -843,6 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2588969b9eb2bcf40aa3127afc66ba4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  V_Script: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
   MoveSpeed: 6
   JumpForce: 15.1
   Slidestartspeed: 0
@@ -866,6 +869,7 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
+  VScript: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
   Distance: 0.2
   JumpAmmount: 1
   Grounded: 0

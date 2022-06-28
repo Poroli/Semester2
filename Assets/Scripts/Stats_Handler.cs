@@ -53,7 +53,7 @@ public class Stats_Handler : MonoBehaviour
             CanGetSpeed = false;
         }
         SlideSpeed = Mathf.Abs(P_Movement.Slidestartspeed) + Slide_SpeedUpgrade + Slide_Xtrastartspeed;
-        Player_DMG = Weapon_DMG + (Weapon_DMG * PercentageofMaxSlided);
+        Player_DMG = Weapon_DMG + (Weapon_DMG * (PercentageofMaxSlided/100));
 
         PercentageofMaxSlided = Mathf.RoundToInt(((10 * P_Movement.Slidetime) / (10 * Slidetimereset)) * 100);
     }
