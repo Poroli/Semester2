@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlattformerMovement : MonoBehaviour
 {
     public ValueScript V_Script;
+    public Transform Playerflip;
     public float MoveSpeed = 5f;
     public float JumpForce = 7f;
     public float Slidestartspeed;
@@ -17,7 +18,6 @@ public class PlattformerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private Groundcheck groundCheck;
     private Animator playerAnimator;
-    private SpriteRenderer playerRenderer;
     private Stats_Handler S_Handler;
     private int canmove = 1;
     private int Slidetimeup = 1;
@@ -28,7 +28,6 @@ public class PlattformerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         groundCheck = GetComponent<Groundcheck>();
         playerAnimator = GetComponentInChildren<Animator>();
-        playerRenderer = GetComponentInChildren<SpriteRenderer>();
         S_Handler = FindObjectOfType<Stats_Handler>();
 
         Slidestartspeed = 0;
@@ -85,7 +84,6 @@ public class PlattformerMovement : MonoBehaviour
             S_Handler.Percentagestack += S_Handler.PercentageofMaxSlided; 
             canmove = 1;
             Slidetime = 1f;
-            S_Handler.Slidedistance = 0;
             Slidetimeup = 1;
             sliding = false;
             S_Handler.CanGetSpeed = true;
@@ -102,13 +100,13 @@ public class PlattformerMovement : MonoBehaviour
            playerAnimator.SetBool("Moves", true);
             if (velocity.x > 0)
             {
-                playerRenderer.flipX = false;
+                Playerflip.localScale = new Vector3(1f, 1f, 1f);
                 slideDirectionVar = 1;
 
             }
             else if (velocity.x < 0)
             {
-                playerRenderer.flipX = true;
+                Playerflip.localScale = new Vector3(-1f, 1f, 1f);
                 slideDirectionVar = -1;
             }
         }

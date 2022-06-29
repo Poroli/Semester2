@@ -1037,6 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   V_Script: {fileID: 11400000, guid: e02a0c57bd4bea84a84073cba24422bc, type: 2}
+  Playerflip: {fileID: 5459042018766510986}
   MoveSpeed: 6
   JumpForce: 15.1
   Slidestartspeed: 0
