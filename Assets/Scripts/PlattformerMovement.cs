@@ -12,6 +12,7 @@ public class PlattformerMovement : MonoBehaviour
     public float ActualSpeed;
     public bool sliding = false;
     public int slideDirectionVar;
+    
 
     private Rigidbody2D rb2d;
     private Groundcheck groundCheck;
@@ -119,6 +120,10 @@ public class PlattformerMovement : MonoBehaviour
         if (justJumped == true)
         {
             playerAnimator.SetTrigger("Jump");
+        }
+        else if (sliding == true)
+        {
+            playerAnimator.SetTrigger("Slide");
         }
     }
 }

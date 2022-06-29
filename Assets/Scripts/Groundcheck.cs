@@ -11,7 +11,9 @@ public class Groundcheck : MonoBehaviour
     public int JumpAmmount;
     public bool Grounded;
     public float Cooldown;
-    
+    public GameObject StandardCollider;
+    public GameObject JumpCollider;
+
     private int jumpCount;
     private bool isOnCooldown;
     private int slideCount;
@@ -41,6 +43,10 @@ public class Groundcheck : MonoBehaviour
         else
         {
             Grounded=true;
+            //StandCollider an
+            StandardCollider.gameObject.SetActive(true);
+            //JumpCollider aus
+            JumpCollider.gameObject.SetActive(false);
             jumpCount = 0;
         }
         
@@ -81,6 +87,10 @@ public class Groundcheck : MonoBehaviour
     }
     public void Jumped()
     {
+        //JumpCollider an
+        JumpCollider.gameObject.SetActive(true);
+        //StandardCollider aus
+        StandardCollider.gameObject.SetActive(false);
         jumpCount += 1;
         isOnCooldown = true;
         Grounded = false;

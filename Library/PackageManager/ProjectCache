@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637919982959970351
-    m_Hash: 3239549853
+      ticks: 637920904333474817
+    m_Hash: 1581568966
   m_LockFileStatus:
     m_FilePath: C:/Users/lukas/LeererOrdner/Semester2/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637920123661447325
-    m_Hash: 849983049
+      ticks: 637920904475342044
+    m_Hash: 2301504201
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/lukas/LeererOrdner/Semester2/Packages
-m_EditorVersion: 2021.3.1f1 (3b70a0754835)
+m_EditorVersion: 2021.3.5f1 (40eb3a945986)
 m_ResolvedPackages:
 - packageId: com.unity.cinemachine@2.8.6
   testable: 0
@@ -105,7 +105,6 @@ m_ResolvedPackages:
     - 2.9.0-pre.1
     - 2.9.0-pre.6
     compatible:
-    - 2.8.4
     - 2.8.6
     - 2.9.0-pre.1
     - 2.9.0-pre.6
@@ -153,14 +152,14 @@ m_ResolvedPackages:
     revision: 5e26d3cd08865a98219c0d2d3a8cc689018dd75b
     path: 
   unityLifecycle:
-    version: 2.8.4
+    version: 2.8.6
     nextVersion: 
-- packageId: com.unity.collab-proxy@1.15.16
+- packageId: com.unity.collab-proxy@1.15.18
   testable: 0
   isDirectDependency: 1
-  version: 1.15.16
+  version: 1.15.18
   source: 1
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.collab-proxy@1.15.16
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.collab-proxy@1.15.18
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -225,6 +224,8 @@ m_ResolvedPackages:
     - 1.15.16
     - 1.15.17
     - 1.15.18
+    - 1.17.0
+    - 1.17.1
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -236,10 +237,9 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
-    - 1.15.15
-    - 1.15.16
-    - 1.15.17
     - 1.15.18
+    - 1.17.0
+    - 1.17.1
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -256,8 +256,12 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.0.1
+    version: 1.4.0
   - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   keywords:
   - backup
@@ -282,16 +286,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637847776260000000
+  datePublishedTicks: 637888962690000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 714a2838c2d55add3d0accf539488f96caa757b2
+    revision: 611215dcd30048fa921b4be160048bad4022d65f
     path: 
   unityLifecycle:
-    version: 1.15.15
+    version: 1.15.18
     nextVersion: 
 - packageId: com.unity.feature.2d@1.0.0
   testable: 0
@@ -338,7 +342,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.2d.animation
-    version: 7.0.4
+    version: 7.0.6
   - name: com.unity.2d.common
     version: 6.0.3
   - name: com.unity.2d.sprite
@@ -362,7 +366,7 @@ m_ResolvedPackages:
   - name: com.unity.2d.pixel-perfect
     version: 5.0.1
   - name: com.unity.2d.psdimporter
-    version: 6.0.3
+    version: 6.0.4
   - name: com.unity.2d.spriteshape
     version: 7.0.4
   - name: com.unity.2d.path
@@ -372,7 +376,7 @@ m_ResolvedPackages:
   - name: com.unity.2d.tilemap
     version: 1.0.0
   - name: com.unity.2d.tilemap.extras
-    version: 2.2.1
+    version: 2.2.3
   - name: com.unity.modules.tilemap
     version: 1.0.0
   - name: com.unity.ugui
@@ -450,10 +454,11 @@ m_ResolvedPackages:
     - 3.0.12
     - 3.0.13
     - 3.0.14
+    - 3.0.15
     compatible:
-    - 3.0.13
     - 3.0.14
-    verified: 3.0.14
+    - 3.0.15
+    verified: 3.0.15
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -479,7 +484,7 @@ m_ResolvedPackages:
     revision: e6bfc84a08a0876a2c20ec2ee0883b5ece331dfd
     path: 
   unityLifecycle:
-    version: 3.0.13
+    version: 3.0.14
     nextVersion: 
 - packageId: com.unity.ide.visualstudio@2.0.15
   testable: 0
@@ -521,10 +526,11 @@ m_ResolvedPackages:
     - 2.0.12
     - 2.0.14
     - 2.0.15
+    - 2.0.16
     compatible:
-    - 2.0.14
     - 2.0.15
-    verified: 2.0.15
+    - 2.0.16
+    verified: 2.0.16
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -556,7 +562,7 @@ m_ResolvedPackages:
     revision: ca1ece42f5a2c5484ba15a15bb975ccc1f6a1a3c
     path: 
   unityLifecycle:
-    version: 2.0.14
+    version: 2.0.15
     nextVersion: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
@@ -619,12 +625,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.5
     nextVersion: 
-- packageId: com.unity.render-pipelines.universal@12.1.6
+- packageId: com.unity.render-pipelines.universal@12.1.7
   testable: 0
   isDirectDependency: 1
-  version: 12.1.6
+  version: 12.1.7
   source: 2
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.render-pipelines.universal@12.1.6
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.render-pipelines.universal@12.1.7
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -685,26 +691,26 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
-    - 12.1.6
+    - 12.1.7
     compatible:
-    - 12.1.6
-    verified: 12.1.6
+    - 12.1.7
+    verified: 12.1.7
   dependencies:
   - name: com.unity.mathematics
     version: 1.2.1
   - name: com.unity.burst
     version: 1.5.0
   - name: com.unity.render-pipelines.core
-    version: 12.1.6
+    version: 12.1.7
   - name: com.unity.shadergraph
-    version: 12.1.6
+    version: 12.1.7
   resolvedDependencies:
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.burst
     version: 1.6.5
   - name: com.unity.render-pipelines.core
-    version: 12.1.6
+    version: 12.1.7
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -716,7 +722,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.shadergraph
-    version: 12.1.6
+    version: 12.1.7
   - name: com.unity.searcher
     version: 4.9.1
   keywords:
@@ -744,7 +750,7 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 12.1.6
+    version: 12.1.7
     nextVersion: 
 - packageId: com.unity.test-framework@1.1.31
   testable: 0
@@ -1216,12 +1222,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.visualscripting@1.7.6
+- packageId: com.unity.visualscripting@1.7.8
   testable: 0
   isDirectDependency: 1
-  version: 1.7.6
+  version: 1.7.8
   source: 1
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.visualscripting@1.7.6
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.visualscripting@1.7.8
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1264,8 +1270,6 @@ m_ResolvedPackages:
     - 1.7.8
     - 1.8.0-pre.1
     compatible:
-    - 1.7.6
-    - 1.7.7
     - 1.7.8
     verified: 1.7.8
   dependencies:
@@ -1292,16 +1296,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637722460580000000
+  datePublishedTicks: 637878097330000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 64599611822e37717efdd2fa1a0576e1984155fc
+    revision: 775a560e6602f51ff05aca02264f8bed4d415fd3
     path: 
   unityLifecycle:
-    version: 1.7.6
+    version: 1.7.8
     nextVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
@@ -3294,19 +3298,23 @@ m_ResolvedPackages:
     - 1.6.3
     - 1.6.4
     - 1.6.5
+    - 1.6.6
     - 1.7.0-pre.1
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
     - 1.8.0-pre.1
     compatible:
     - 1.6.5
+    - 1.6.6
     - 1.7.0-pre.1
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
     - 1.8.0-pre.1
-    verified: 1.6.5
+    verified: 1.6.6
   dependencies:
   - name: com.unity.mathematics
     version: 1.2.1
@@ -3334,12 +3342,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.6.5
     nextVersion: 
-- packageId: com.unity.render-pipelines.core@12.1.6
+- packageId: com.unity.render-pipelines.core@12.1.7
   testable: 0
   isDirectDependency: 0
-  version: 12.1.6
+  version: 12.1.7
   source: 2
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.render-pipelines.core@12.1.6
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.render-pipelines.core@12.1.7
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -3456,10 +3464,10 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
-    - 12.1.6
+    - 12.1.7
     compatible:
-    - 12.1.6
-    verified: 12.1.6
+    - 12.1.7
+    verified: 12.1.7
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -3497,14 +3505,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 12.1.6
+    version: 12.1.7
     nextVersion: 
-- packageId: com.unity.shadergraph@12.1.6
+- packageId: com.unity.shadergraph@12.1.7
   testable: 0
   isDirectDependency: 0
-  version: 12.1.6
+  version: 12.1.7
   source: 2
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.shadergraph@12.1.6
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.shadergraph@12.1.7
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -3618,18 +3626,18 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
-    - 12.1.6
+    - 12.1.7
     compatible:
-    - 12.1.6
-    verified: 12.1.6
+    - 12.1.7
+    verified: 12.1.7
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 12.1.6
+    version: 12.1.7
   - name: com.unity.searcher
     version: 4.9.1
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 12.1.6
+    version: 12.1.7
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -3661,14 +3669,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 12.1.6
+    version: 12.1.7
     nextVersion: 
-- packageId: com.unity.2d.animation@7.0.4
+- packageId: com.unity.2d.animation@7.0.6
   testable: 0
   isDirectDependency: 0
-  version: 7.0.4
+  version: 7.0.6
   source: 1
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.2d.animation@7.0.4
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.2d.animation@7.0.6
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -3776,9 +3784,8 @@ m_ResolvedPackages:
     - 8.0.1
     - 8.0.2
     - 9.0.0-pre.1
+    - 9.0.0-pre.3
     compatible:
-    - 7.0.4
-    - 7.0.5
     - 7.0.6
     verified: 7.0.6
   dependencies:
@@ -3823,16 +3830,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637817447860000000
+  datePublishedTicks: 637892785830000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 41fd674f8e4b2265bdbc50291dced1bd86c590ee
+    revision: 1c0695a81f795ed6aaafcb9d6a9c41b20e6d22bf
     path: 
   unityLifecycle:
-    version: 7.0.4
+    version: 7.0.6
     nextVersion: 
 - packageId: com.unity.2d.pixel-perfect@5.0.1
   testable: 0
@@ -3908,12 +3915,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 5.0.1
     nextVersion: 
-- packageId: com.unity.2d.psdimporter@6.0.3
+- packageId: com.unity.2d.psdimporter@6.0.4
   testable: 0
   isDirectDependency: 0
-  version: 6.0.3
+  version: 6.0.4
   source: 1
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.2d.psdimporter@6.0.3
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.2d.psdimporter@6.0.4
   assetPath: Packages/com.unity.2d.psdimporter
   name: com.unity.2d.psdimporter
   displayName: 2D PSD Importer
@@ -3988,20 +3995,20 @@ m_ResolvedPackages:
     - 7.0.0
     - 7.0.1
     - 8.0.0-pre.1
+    - 8.0.0-pre.3
     compatible:
-    - 6.0.3
     - 6.0.4
     verified: 6.0.4
   dependencies:
   - name: com.unity.2d.animation
-    version: 7.0.4
+    version: 7.0.6
   - name: com.unity.2d.common
     version: 6.0.3
   - name: com.unity.2d.sprite
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.animation
-    version: 7.0.4
+    version: 7.0.6
   - name: com.unity.2d.common
     version: 6.0.3
   - name: com.unity.2d.sprite
@@ -4035,16 +4042,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637817447900000000
+  datePublishedTicks: 637901498510000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 41fd674f8e4b2265bdbc50291dced1bd86c590ee
+    revision: 787eee07cde83ceec97b5cee792e9e0a1566b141
     path: 
   unityLifecycle:
-    version: 6.0.3
+    version: 6.0.4
     nextVersion: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -4185,13 +4192,15 @@ m_ResolvedPackages:
     - 7.0.2
     - 7.0.3
     - 7.0.4
+    - 7.0.5
     - 8.0.0-pre.4
     - 8.0.0-pre.5
     - 8.0.0
     - 9.0.0-pre.1
     compatible:
     - 7.0.4
-    verified: 7.0.4
+    - 7.0.5
+    verified: 7.0.5
   dependencies:
   - name: com.unity.mathematics
     version: 1.1.0
@@ -4301,12 +4310,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.2d.tilemap.extras@2.2.1
+- packageId: com.unity.2d.tilemap.extras@2.2.3
   testable: 0
   isDirectDependency: 0
-  version: 2.2.1
+  version: 2.2.3
   source: 1
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.2d.tilemap.extras@2.2.1
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.2d.tilemap.extras@2.2.3
   assetPath: Packages/com.unity.2d.tilemap.extras
   name: com.unity.2d.tilemap.extras
   displayName: 2D Tilemap Extras
@@ -4357,8 +4366,6 @@ m_ResolvedPackages:
     - 3.0.1
     - 3.0.2
     compatible:
-    - 2.2.1
-    - 2.2.2
     - 2.2.3
     verified: 2.2.3
   dependencies:
@@ -4396,23 +4403,23 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637690415140000000
+  datePublishedTicks: 637892785880000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/2d-extras.git
-    revision: ab6199c75d7737ad61837747f178a999273bcf88
+    revision: 23a879f6458e28d4082f486e6c2375ef4c281145
     path: 
   unityLifecycle:
-    version: 2.2.1
+    version: 2.2.3
     nextVersion: 
-- packageId: com.unity.services.core@1.0.1
+- packageId: com.unity.services.core@1.4.0
   testable: 0
   isDirectDependency: 0
-  version: 1.0.1
+  version: 1.4.0
   source: 1
-  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.services.core@1.0.1
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.services.core@1.4.0
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -4426,7 +4433,7 @@ m_ResolvedPackages:
     packages.
 
     These are standardized and aim to unify the overall experience
-    of working with Game Services packages.'
+    of working with Game Services SDK.'
   status: 4
   errors: []
   versions:
@@ -4444,26 +4451,25 @@ m_ResolvedPackages:
     - 1.3.2
     - 1.4.0
     - 1.4.1
+    - 1.4.2
     compatible:
-    - 1.0.1
-    - 1.1.0-pre.7
-    - 1.1.0-pre.8
-    - 1.1.0-pre.9
-    - 1.1.0-pre.10
-    - 1.1.0-pre.11
-    - 1.1.0-pre.41
-    - 1.1.0-pre.69
-    - 1.2.0
-    - 1.3.1
-    - 1.3.2
     - 1.4.0
     - 1.4.1
-    verified: 1.0.1
+    - 1.4.2
+    verified: 1.4.2
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   keywords: []
   registry:
@@ -4475,17 +4481,17 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637604883250000000
+  datePublishedTicks: 637871962570000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
+    revision: 92e281deb97a96f7b32464b6874de73a17c140ff
     path: 
   unityLifecycle:
-    version: 1.0.1
-    nextVersion: 1.1.0-pre.8
+    version: 1.4.0
+    nextVersion: 
 - packageId: com.unity.searcher@4.9.1
   testable: 0
   isDirectDependency: 0
@@ -4608,6 +4614,7 @@ m_ResolvedPackages:
     - 7.0.0-pre.4
     - 7.0.0
     - 8.0.0-pre.1
+    - 8.0.0-pre.2
     compatible:
     - 6.0.3
     verified: 6.0.3
@@ -4728,4 +4735,60 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 5.0.2
+    nextVersion: 
+- packageId: com.unity.nuget.newtonsoft-json@3.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 3.0.2
+  source: 1
+  resolvedPath: C:\Users\lukas\LeererOrdner\Semester2\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.1.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 3.0.2
+    compatible:
+    - 3.0.2
+    verified: 3.0.2
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: 8f66870a71ad3f2cdd46330b5c482dfd138ffc64
+    path: 
+  unityLifecycle:
+    version: 3.0.2
     nextVersion: 
