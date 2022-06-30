@@ -109,6 +109,10 @@
     <Compile Include="Assets\Scripts\Integral_Test.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\UnlockUpgradeWeapon.cs" />
+    <Compile Include="Assets\Scripts\Buy.cs" />
+    <Compile Include="Assets\Scripts\ShopButtonsActivate.cs" />
+    <Compile Include="Assets\Scripts\MainMenuFunctions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

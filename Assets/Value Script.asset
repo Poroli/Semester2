@@ -18,7 +18,25 @@ MonoBehaviour:
   MaxSlideStack: 200
   AirslideAmmount: 2
   AttackCooldown: 0
-  Souls: 40
+  Souls: 780
   Soulsperkill: 10
   PlayerMaxhealth: 1
   NormalEnemyDMG: 1
+  AttackSpeedModifier:
+  - 3
+  - 6
+  AttackSpeedCost: 0a00000014000000
+  HealthModifier:
+  - 2
+  - 4
+  HealthCost: 1e0000003c000000
+  SlideMeterModifier:
+  - 1
+  - 5
+  SlideMeterCost: 2800000032000000
+  ActualSlideMeterModifier: 5
+  ActualAttackSpeedModifier: 3
+  ActualHealthModifier: 4
+  AttackspeedModifierLevel: 0
+  HealthModifierLevel: 0
+  SlideMeterModifierLevel: 0
