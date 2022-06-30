@@ -17,7 +17,7 @@ public class Playerhealth : MonoBehaviour
     {
         if (currenthealth <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

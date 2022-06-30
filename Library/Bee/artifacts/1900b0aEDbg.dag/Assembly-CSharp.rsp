@@ -401,6 +401,7 @@
 "Assets/Scripts/Enemy_GFX.cs"
 "Assets/Scripts/Groundcheck.cs"
 "Assets/Scripts/Integral_Test.cs"
+"Assets/Scripts/MainMenuFunctions.cs"
 "Assets/Scripts/PlattformerMovement.cs"
 "Assets/Scripts/Playerhealth.cs"
 "Assets/Scripts/Player_Attack.cs"
