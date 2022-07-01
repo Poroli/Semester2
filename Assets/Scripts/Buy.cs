@@ -22,7 +22,7 @@ public class Buy : MonoBehaviour
         {
             return;
         }
-        else if (ATSP < VS.AttackSpeedCost.Length -1)
+        else if (ATSP < VS.AttackSpeedCost.Length)
         {
            VS.Souls -= VS.AttackSpeedCost[ATSP];
             VS.ActualAttackSpeedModifier = VS.AttackSpeedModifier[ATSP];
@@ -37,7 +37,7 @@ public class Buy : MonoBehaviour
         {
             return;
         }
-        else if (H < VS.HealthCost.Length -1)
+        else if (H < VS.HealthCost.Length)
         {
             VS.Souls -= VS.HealthCost[H];
             VS.ActualHealthModifier= VS.HealthModifier[H];
@@ -51,7 +51,7 @@ public class Buy : MonoBehaviour
         {
             return;
         }
-        else if (SM < VS.SlideMeterCost.Length -1)
+        else if (SM < VS.SlideMeterCost.Length)
         {
                VS.Souls -= VS.SlideMeterCost[SM];
             VS.ActualSlideMeterModifier= VS.SlideMeterModifier[SM];

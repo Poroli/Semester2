@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuFunctions : MonoBehaviour
 {
     public GameObject PlayUntermenü;
+    public GameObject Upgrades;
     
     public void Play()
     {
@@ -21,12 +22,12 @@ public class MainMenuFunctions : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+    public void UpgradeMenu()
+    {
+        Upgrades.SetActive(true);
+    }
     public void ExitGame()
     {
         Application.Quit();
-    }
-    private void Start()
-    {
-        
     }
 }
