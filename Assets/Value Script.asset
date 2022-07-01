@@ -12,31 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becfff32e7a5d94469bea256eb928ea0, type: 3}
   m_Name: Value Script
   m_EditorClassIdentifier: 
-  EnemyHealth: 2
-  Weapon_baseDMG: 1
-  Slide_Xtraspeed: 10
-  MaxSlideStack: 200
-  AirslideAmmount: 2
+  EnemyHealth: 0
+  Weapon_baseDMG: 0
+  Slide_Xtraspeed: 0
+  MaxSlideStack: 0
+  AirslideAmmount: 0
   AttackCooldown: 0
-  Souls: 780
-  Soulsperkill: 10
-  PlayerMaxhealth: 1
-  NormalEnemyDMG: 1
-  AttackSpeedModifier:
-  - 3
-  - 6
-  AttackSpeedCost: 0a00000014000000
-  HealthModifier:
-  - 2
-  - 4
-  HealthCost: 1e0000003c000000
-  SlideMeterModifier:
-  - 1
-  - 5
-  SlideMeterCost: 2800000032000000
-  ActualSlideMeterModifier: 5
-  ActualAttackSpeedModifier: 3
-  ActualHealthModifier: 4
+  Souls: 0
+  Soulsperkill: 0
+  PlayerMaxhealth: 0
+  NormalEnemyDMG: 0
+  AttackSpeedModifier: []
+  AttackSpeedCost: 
+  HealthModifier: []
+  HealthCost: 
+  SlideMeterModifier: []
+  SlideMeterCost: 
+  ActualSlideMeterModifier: 0
+  ActualAttackSpeedModifier: 0
+  ActualHealthModifier: 0
   AttackspeedModifierLevel: 0
   HealthModifierLevel: 0
   SlideMeterModifierLevel: 0
